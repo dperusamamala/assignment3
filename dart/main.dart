@@ -1,13 +1,5 @@
 void main() {
-  //question; 1
-  List<String> names = ['Usama', 'Muhammad Ismail', 'Yousuf', 'Muzzammil'];
-  print(names);
-
-  //question; 2
-
-  List<String> days = [];
-
-  days.addAll([
+  List<String> days = [
     'saturday',
     'sunday',
     'monday',
@@ -15,6 +7,8 @@ void main() {
     'wednesday',
     'thursday',
     'friday'
-  ]);
+  ];
+
+  days.removeRange(0, days.length);
   print(days);
 }
