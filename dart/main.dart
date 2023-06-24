@@ -1,14 +1,11 @@
+//question number 4:
 void main() {
-  List<String> days = [
-    'saturday',
-    'sunday',
-    'monday',
-    'tuesday',
-    'wednesday',
-    'thursday',
-    'friday'
-  ];
+  List<int> numbers = [12, 15, 44, 45, 554, 10, 9, 6];
 
-  days.removeRange(0, days.length);
-  print(days);
+  numbers.sort();
+  int smallest = numbers.first;
+  int greatest = numbers.last;
+
+  print('the smallest number is $smallest');
+  print('the greatest number is $greatest');
 }
